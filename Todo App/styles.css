@@ -1,0 +1,199 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f8;
+  padding: 15px;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.card h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* Input section */
+.eventadd {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.eventadd input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.eventadd input:focus {
+  border-color: #667eea;
+}
+
+/* Button */
+.eventadd button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #667eea;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.eventadd button:hover {
+  opacity: 0.9;
+}
+
+/* Status */
+.status {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+  gap: 10px;
+}
+
+.status p {
+  cursor: pointer;
+  background-color:gainsboro ;
+  padding: 3px;
+  border-radius: 5px;
+}
+.status p:hover {
+  background-color: #667eea;
+  color: white;
+}
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Task Lists */
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+/* Task Items */
+#taskList li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  gap: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  transition: background 0.2s, transform 0.2s;
+}
+
+li:hover {
+  background: #f1f1f1;
+  transform: translateY(-1px);
+}
+
+/* Checkbox */
+li input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* Task Text */
+li span {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+
+/* Delete Button */
+li button.delete {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  transition: transform 0.2s;
+}
+
+li button.delete:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li span {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  li button.delete {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
+
+/* Footer */
+.left {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  .card {
+    padding: 15px;
+  }
+
+  .eventadd {
+    flex-direction: column;
+  }
+
+  .eventadd button {
+    width: 100%;
+  }
+
+  .status {
+    font-size: 13px;
+  }
+}
